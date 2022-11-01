@@ -773,6 +773,45 @@ footer {
     } 
 }
 
+/* media queries (tablet and medium device) */
+@media screen and (max-width: 900px) {
+
+    h1,
+    h2{
+      font-size: 3rem;  
+    }
+
+    .header__tag{
+        font-size: 1.7rem;
+    }
+
+    .header__right p{
+        font-size: 1.3rem;
+    }
+
+    .about__right{
+        font-size: 1.3rem;
+    }
+
+    #gallery p{
+        font-size: 1.3rem;
+    }
+
+    #exhibitions p{
+        font-size: 1.3rem;
+    }
+
+    .footer__links{
+        font-size: 1.3rem;
+    }
+
+    iframe {
+        height: max-content;
+        width: 1020px;
+    }
+
+}
+
 /* media queries (small screens) */
 @media screen and (max-width: 700px) {
 
