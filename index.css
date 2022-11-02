@@ -444,13 +444,13 @@ small{
 }
 
 .swiper-slide img {
-    filter: saturate(0);
+    /* filter: saturate(0); */
     transition: var(--transition);
 }
 
-.swiper-slide:hover img {
+/* .swiper-slide:hover img {
     filter: saturate(1);
-}
+} */
 
 .swiper-pagination-bullet {
     background: var(--color-primary);
@@ -516,15 +516,19 @@ small{
 
 .exhibitions__gallery article img {
     height: 100%;
-    filter: saturate(0);
+    /* filter: saturate(0); */
 }
 
-.exhibitions__gallery article:hover img {
+/* .exhibitions__gallery article:hover img {
     filter: saturate(1);
-}
+} */
 
 .exhibitions__gallery article:hover {
     box-shadow: 0 4rem 4rem rgba(0, 0, 0, 0.5);
+}
+
+video{
+    margin-left: 3.5rem;
 }
 
 /*========== footer ============= */
@@ -864,6 +868,7 @@ footer {
     }
 
     .header__right p {
+        font-size: 1.5rem;
         margin-top: 1rem;
     }
 
@@ -878,6 +883,7 @@ footer {
     }
 
     .about__right p {
+        font-size: 1.5rem;
         width: 100%;
     }
 
@@ -888,9 +894,16 @@ footer {
     /* gallery */
     #gallery {
         margin-top: 6rem;
+        font-size: 1.5rem;
+    }
+
+    .pg{
+        font-style: italic;
+        font-weight: 600;
     }
 
     .gallery__container p {
+        font-size: 2rem;
         margin-top: 1rem;
     }
 
@@ -901,6 +914,22 @@ footer {
     /* exhibitions */
     #exhibitions {
         margin-top: 6rem;
+    }
+
+    .pe{
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    video {
+        /* grid-template-columns: 1fr 1fr; */
+        width: 80vw;
+        /* height: fit-content; */
+        height: 50rem;
+        object-fit: cover;
+        /* padding-right: 1rem; */
+        margin-top: 1rem;
+        align-items: center;
     }
 
     .exhibitions__head {
@@ -938,21 +967,18 @@ footer {
 
     .uil-facebook{
         font-size: 3rem;
-        background: blue;
-        border-radius: 20px;
+        
        
     }
 
     .uil-instagram{
         font-size: 3rem;
-        background: rgb(190, 9, 109);
-        border-radius: 20px;
+        
     }
 
     .uil-whatsapp{
         font-size: 3rem;
-        background: rgb(13, 194, 13);
-        border-radius: 20px;
+       
     }
 
     iframe{
