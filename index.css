@@ -4,9 +4,9 @@
     /* =========Green theme========= */
     --color-primary: #ff7b02;
     --color-primary-variant: #e5a55d;
-    --color-bg-1: #000c17;
+    --color-bg-1: #021b33;
     --color-bg-2: #001e2d;
-    --color-bg-3: #012734;
+    --color-bg-3: #094558;
     --color-bg-4: #003347;
     --color-light: #ffffff;
     --color-white: hsl(0, 0%, 90%);
@@ -215,7 +215,7 @@ header {
 .empty {
     height: 3.5rem;
     width: 18rem;
-    background: var(--color-bg-2);
+    background: var(--color-primary);
     border-radius: calc(3.5rem / 2);
     margin-bottom: 3.5rem;
     box-shadow: inset 0 1rem 1rem rgba(0, 0, 0, 0.3);
@@ -291,6 +291,10 @@ header {
     bottom: -3rem;
 }
 
+small{
+    font-style: italic;
+    font-weight: 100;
+}
 
 .header__btn:hover {
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
@@ -328,6 +332,7 @@ header {
 #about {
     margin-top: 18rem;
 }
+
 
 .about__container {
     display: grid;
@@ -563,6 +568,18 @@ footer {
     align-items: center;
 }
 
+.uil-whatsapp{
+    font-size: 1.5rem;
+}
+
+.uil-facebook{
+    font-size: 1.5rem;
+}
+
+.uil-instagram {
+    font-size: 1.5rem;
+}
+
 /* media queries (medium screens) */
 @media screen and (max-width: 1024px) {
     .container {
@@ -596,7 +613,7 @@ footer {
 
     .nav__links li {
         height: 5rem;
-        box-shadow: -3rem 3rem 3rem rgba(0, 0, 0, 0.7);
+        /* box-shadow: -3rem 3rem 3rem rgba(0, 0, 0, 0.7); */
         animation: navAnimation 600ms forwards;
         transform: rotateX(90deg);
         opacity: 0;
@@ -919,9 +936,28 @@ footer {
         margin-top: 5rem;
     }  
 
+    .uil-facebook{
+        font-size: 3rem;
+        background: blue;
+        border-radius: 20px;
+       
+    }
+
+    .uil-instagram{
+        font-size: 3rem;
+        background: rgb(190, 9, 109);
+        border-radius: 20px;
+    }
+
+    .uil-whatsapp{
+        font-size: 3rem;
+        background: rgb(13, 194, 13);
+        border-radius: 20px;
+    }
+
     iframe{
         height: max-content;
-        width: 700px;
+        width: 600px;
         overflow: hidden;
     }
 
