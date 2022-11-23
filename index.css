@@ -117,6 +117,14 @@ nav {
     display: none;
 }
 
+#nav__toggle-open{
+    font-size: 3rem;
+}
+
+#nav__toggle-close{
+    font-size: 3rem;
+}
+
 .nav__logo {
     width: 7.5rem;
 }
@@ -455,7 +463,17 @@ small{
 .swiper-pagination-bullet {
     background: var(--color-primary);
 }
-
+video{
+    /* padding-top: 1rem; */
+    object-fit: cover;
+    padding-left: 1.5rem;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(1fr, 3fr);
+    margin-top: 5rem;
+    gap: 3rem;
+    
+}
 /*========== exhibitions ============= */
 
 #exhibitions {
@@ -527,9 +545,13 @@ small{
     box-shadow: 0 4rem 4rem rgba(0, 0, 0, 0.5);
 }
 
-video{
-    margin-left: 3.5rem;
-}
+/* video{
+    margin: 3.5rem;
+    display: grid;
+    grid-template-rows: repeat(3, 3fr);
+    margin-top: 5rem;
+    gap: 3rem;
+} */
 
 /*========== footer ============= */
 footer {
@@ -634,6 +656,10 @@ footer {
 
     .nav__links li:nth-child(4) {
         animation-delay: 600ms;
+    }
+
+    .nav__links li:nth-child(5) {
+        animation-delay: 800ms;
     }
 
     @keyframes navAnimation {
@@ -810,6 +836,10 @@ footer {
         font-size: 1.3rem;
     }
 
+    .nav__links{
+        font-size: 2rem;
+    }
+
     .about__right{
         font-size: 1.3rem;
     }
@@ -827,8 +857,9 @@ footer {
     }
 
     iframe {
-        height: max-content;
-        width: 1020px;
+        /* height: max-content;
+        width: 1020px; */
+        margin: auto;
     }
 
 }
@@ -923,13 +954,12 @@ footer {
 
     video {
         /* grid-template-columns: 1fr 1fr; */
-        width: 80vw;
-        /* height: fit-content; */
+        width: 100vw;
+        margin: auto;
         height: 50rem;
-        object-fit: cover;
-        /* padding-right: 1rem; */
+        padding-right: 1rem;
         margin-top: 1rem;
-        align-items: center;
+        
     }
 
     .exhibitions__head {
@@ -982,9 +1012,10 @@ footer {
     }
 
     iframe{
-        height: max-content;
+        /* height: max-content;
         width: 600px;
-        overflow: hidden;
+        overflow: hidden; */
+        margin: auto;
     }
 
 }
