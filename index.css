@@ -1016,6 +1016,8 @@ footer {
         width: 600px;
         overflow: hidden; */
         margin: auto;
+        /* width: 700px; */
+        align-items: center;
     }
 
 }
